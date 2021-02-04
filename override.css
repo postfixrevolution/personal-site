@@ -1,0 +1,264 @@
+body {
+    background-color: #24435a;
+    /* previously: 29475c*/
+}
+
+main {
+    color: #437b9e;
+    /* previously 3e7395*/
+}
+
+main button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+main button:focus {
+    outline: none;
+}
+
+h1 {
+    padding-top: 25%;
+    text-transform: uppercase;
+    color: #8CB3CE;
+    font-family: 'Antic', Verdana, sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #8CB3CE;
+    font-family: 'Antic', Verdana, sans-serif;
+    border-bottom: 2px solid #8CB3CE;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size:30px;
+    text-transform: uppercase;
+    color: #8CB3CE;
+    font-family: 'Antic', Verdana, sans-serif;
+    border-bottom: 2px solid #8CB3CE;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-weight: 300;
+    color: #8CB3CE;
+}
+
+.skillsection {
+    text-transform: uppercase;
+    color: #8CB3CE;
+    font-family: 'Antic', Verdana, sans-serif;
+    border-bottom: 1px solid #8CB3CE;
+    padding-bottom: 5px;
+}
+
+.text-box {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* image modifiers */
+.resize {
+    min-height: 85%;
+    min-width: 85%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects-img {
+    border-radius: 5%;
+    width: 100%;
+    opacity: .85;
+    margin-bottom: 10px;
+}
+
+.circular-gradient {
+    border-radius: 50%;
+    padding: .3em;
+    background-image: linear-gradient(to bottom right,#151549, #274f9b, #d2e0e9);
+}
+/* end image modifiers */
+
+/* side menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #e3edf3;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: .5s;
+    text-align: center;
+}
+
+.side-menu a {
+    color: #638AA6;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: .2s;
+}
+
+.side-menu a:hover {
+    background-color: #436984;
+    color: #e3edf3;
+    transition: .5s;
+}
+
+.side-menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    padding: 10px;
+    color: #638AA6;
+}
+
+.side-menu-icon:hover {
+    color: black;
+}
+/* end side menu */
+
+/* navigation and navigation icons */
+.navbar {
+    top: 0;
+    right: 0;
+    z-index: 100;
+    text-align: right;
+    position: fixed;
+    background-color: transparent;
+    padding-top: 1em;
+}
+
+.navbar-icon {
+    border-radius: 50%;
+    padding: .15em;
+    color:#d2e0e9;
+    border: 1px solid #d2e0e9;
+    display: block;
+    transition: .5s;
+}
+
+.to-top-button {
+    border-radius: 50%;
+    padding: .3em;
+    margin-top: 10px;
+    color:#d2e0e9;
+    background: black;
+    transition: .5s;
+}
+
+.soc-med-button {
+    border-radius: 50%;
+    padding: .15em;
+    border: 1px solid #437b9e;
+    color: #437b9e;
+    transition: .3s;
+}
+
+.soc-med-icons {
+    letter-spacing: 20px;
+}
+
+.soc-med-button:hover {
+    border: 1px solid #d2e0e9;
+    color: #d2e0e9;
+    transition: .3s;
+}
+
+.navbar-icon:hover, .to-top-button:hover {
+    color: #141a3f;
+    background: #d2e0e9;
+    transition: .5s;
+}
+
+.material-icons.sz-18 {
+    font-size: 18px;
+}
+
+.material-icons.sz-24 {
+    font-size: 24px;
+}
+
+.material-icons.sz-36 {
+    font-size: 36px;
+}
+/* end navigation section */
+
+@media screen and (max-width: 640px) {
+    .extra-line-break-sm {
+        padding-bottom: 20px;
+    }
+}
+
+.extra-line-break {
+    padding-bottom: 40px;
+}
+
+/* parallax scrolling images, specs, related objects */
+.parallax1, .parallax2, .parallax3 {
+    position: relative;
+
+    opacity: .5;
+    background-color: tan;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url(resources/almcosplay.jpg);
+
+    height: 600px;
+    width: auto;
+}
+
+.parallax2 {
+    background-image: url(resources/rey.jpg);
+
+    height: 700px;
+    width: auto;
+}
+
+.parallax3 {
+    background-image: url(resources/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+
+    min-height: 700px;
+    width: auto;
+
+    position: relative;
+}
+
+.parallax-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+/* end parallax section */

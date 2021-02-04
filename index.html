@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Mia Vu
+EMAIL: melk1359@yahoo.com
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Mia Vu">
+  <meta name="description" content="Mia Vu Personal Portfolio Site">
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="override.css">
+
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mia L. Vu</title>
+</head>
+
+<body>
+  <main>
+    <script src="portfoliosite.js"></script>
+    <!-- menu button, top right corner, to access sidebar menu -->
+    <div id="navbar" class="navbar">
+      <button onclick="openMenu()"><em class="material-icons sz-36 navbar-icon" id="navbar-icon">menu</em></button>
+    </div>
+    <!-- end menu button -->
+
+    <!-- side menu, opens and closes on button click -->
+    <div id="sidemenu" class="side-menu">
+      <button onclick="closeMenu()"><em class="material-icons sz-36 side-menu-icon" id="side-menu-button">close</em></button>
+
+      <!-- side menu navigation sections-->
+      <h3><a href="#" onclick="closeMenu()">Home</a></h3>
+      <h3><a href="#about" onclick="closeMenu()">About</a></h3>
+      <h3><a href="#projects" onclick="closeMenu()">Projects</a></h3>
+      <h3><a href="resources/MIA-VU-RESUME-c.2021.pdf" target="_blank" download>Download Resume</a></h3>
+    </div>
+    <!-- end side menu -->
+    
+    <!-- section 1: name/title card + social media links-->
+    <div id="page-top" class="container text-box">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="resources/profilepic.jpg" alt="Headshot of portfolio owner, Mia Vu" class="resize circular-gradient">
+        </div>
+        <div class="col-12 col-md-6">
+          <h1>Mia Linh Vu</h1>
+          <p>engineer | coder | seamstress</p>
+          <p></p>
+          <p class="soc-med-icons">
+            <a href="https://github.com/postfixrevolution" target="_blank"><em class="material-icons sz-18 soc-med-button">code</em></a>
+            <a href="https://www.linkedin.com/in/mia-vu-b05451153/" target="_blank"><em class="material-icons sz-18 soc-med-button">person_search</em></a>
+            <a href="https://www.instagram.com/postfixrevolution/" target="_blank"><em class="material-icons sz-18 soc-med-button">center_focus_weak</em></a>
+            <a href="mailto:soldersetsoul@gmail.com" target="_blank"><em class="material-icons sz-18 soc-med-button">mail_outline</em></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end section 1-->
+
+    <!-- parallax img1: cosplay photo collage -->
+    <div class="parallax1"></div>
+    <!-- end parallax img1 -->
+    
+    <!-- second section: bio + skills-->
+    <div class="container text-box">
+
+      <!-- begin bio subsection -->
+      <div class="row extra-line-break">
+        <div class="col-12">
+          <h2 id="about">Hello, World!</h2>
+          <p>Mia Vu. She/Her. Software Engineering Student. University of California, Irvine, class of 2021.</p>
+          <p>Ever since I was young, I always had a passion for creation. Designing, synthesizing, trial and error. Everything from scratch, everything turned from messy graphite sketch into something solid and real. I've found an outlet for this in many forms: costume design, writing, even experimentation with baking and drink-mixing. Finding an new interest in code, in its infinite capability for creation, was an inevitability.</p>
+          <p>I am a burgeoning full-stack developer, with experience in both back-end and front-end. Back-end, specfically software design and requirements engineering & documentation, are where most of my experience and strength lie. I'm still learning most of the ins and outs of front-end, where I'm most interested in imporoving my web design and devlopment skills. C++ and Java are the languages I'm most comfortable with currently, although HTML and CSS proficiency are at the forefront of my current focus.</p>
+        </div>
+      </div>
+      <!-- end bio subsection -->
+
+      <!-- begin skills subsection -->
+      <div class="row">
+        <div class="col-12">
+          <h2 id="skills">Skills</h2>
+        </div>
+        
+        <!-- technical skills -->
+        <div class="col-12 col-md-4 extra-line-break-sm text-center">
+          <em class="material-icons sz-36">miscellaneous_services</em>
+          <p class="skillsection">Technical</p>
+          <p></p>
+          <p>C++</p>
+          <p>Java</p>
+          <p>HTML/CSS</p>
+          <p>Agile Devlopment</p>
+          <p>Object-Oriented Programming</p>
+        </div>
+
+        <!-- creative skills -->
+        <div class="col-12 col-md-4 extra-line-break-sm text-center">
+          <em class="material-icons sz-36">palette</em>
+            <p class="skillsection">Creative</p>
+            <p></p>
+            <p>Sewing</p>
+            <p>Costume Design</p>
+            <p>Prop Design</p>
+            <p>Creative Writing</p>
+            <p>Culinary Arts</p>
+        </div>
+
+        <!-- humanitarian skills -->
+        <div class="col-12 col-md-4 text-center">
+          <em class="material-icons sz-36">group</em>
+          <p class="skillsection">Humanitarian</p>
+          <p></p>
+          <p>Customer Service</p>
+          <p>Conflict Resolution</p>
+          <p>Goal-Oriented</p>
+          <p>Team Player</p>
+          <p>Documentation</p>
+        </div>
+        
+      </div>
+      <!-- end skills subsection-->
+    </div>
+
+    <!-- parallax img2: rey star wars cosplay-->
+    <div class="parallax2"></div>
+    <!-- end parallax img2 -->
+
+    <!-- third section: projects, img+description card carousel-->
+    <div class="container text-box">
+      <div class="row">
+
+        <div class="col-12">
+          <h3 id="projects">Projects</h3>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img src="resources/phobiagame.JPG" class="img-responsive projects-img" alt="Image of the website for a homebrew card game: PHOBIA.">
+          <h4>PHOBIA Card Game</h4>
+          <p>A collaboratively created party card game. Based on a system of dares and time penalties, prompting fast-pased rounds and encouraging players to face their fears! </p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img src="resources/gerrymanderinggame.png" class="img-responsive projects-img" alt="Image of the board for a homebrew board game: Gerry!.">
+          <h4>Gerry! Board Game</h4>
+          <p>A collaboratively created tactical board game. Intended to educate players about the political practice of gerrymandering through a hands-on, gameplay simulation.</p>
+        </div>
+        
+
+      </div>
+    </div>
+    <!-- end projects section -->
+
+    <!-- parallax img3: html code img, credit @florianolv, unsplash -->
+    <div class="parallax3">
+      <div class="parallax-caption">
+        <span class="caption">Thank you!</span>
+        <p></p>
+        <p></p>
+        <p><button onclick="scrollToTop()"><em class="material-icons sz-24 to-top-button">arrow_upward</em></button></p>
+      </div>
+    </div>
+    <!-- end parallax img3 -->
+    
+  </main>
+</body>
+</html>
